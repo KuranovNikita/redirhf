@@ -1,6 +1,6 @@
 from .production import *
 try:
-    from local.settings import *
+    from .local_settings import *
     
 except ImportError:
     pass
