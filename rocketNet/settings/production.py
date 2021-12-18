@@ -13,11 +13,11 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 
-DB_NAME = os.environ.get('DB_NAME')
-DB_PASSWORD = os.environ.get('DB_PASSWORD')
-DB_HOST = os.environ.get('DB_HOST')
-DB_USER = os.environ.get('DB_USER')
-SECRET_KEY = os.environ.get('SECRET_KEY')
+# DB_NAME = os.environ.get('DB_NAME')
+# DB_PASSWORD = os.environ.get('DB_PASSWORD')
+# DB_HOST = os.environ.get('DB_HOST')
+# DB_USER = os.environ.get('DB_USER')
+# SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -27,8 +27,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-s#0c^1#jf2%tj33zh*w$v)2lph*r747$^s)wed)hv)%aj7fe0m'
-SECRET_KEY = SECRET_KEY
+SECRET_KEY = 'django-insecure-s#0c^1#jf2%tj33zh*w$v)2lph*r747$^s)wed)hv)%aj7fe0m'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'rocketNet.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': DB_NAME,
-        'USER': DB_USER,
-        'PASSWORD': DB_PASSWORD,
-        'HOST': DB_HOST,
+        'NAME': 'd30a4417gq13hr',
+        'USER': 'dhemcpugbzmqpx',
+        'PASSWORD': '2241b8b10e1282de65a6ef6eb691adb189c96a508df4550e1a22d9f75f1c46c0',
+        'HOST': 'ec2-176-34-105-15.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
 }
